@@ -268,7 +268,28 @@ def subsecuencia_mas_larga_2(tipos_pacientes_atendidos: List[str]) -> int:
 #             ["Luis", "Luis", "Luis", "Luis", "Sol", "Sol"],    # 16-17
 #             ["Luis", "Sol", "Luis", "Ana", "Luis", "Sol"]     # 17-18
 #         ]
+
+def un_solo_responsable(t1: str, t2: str, t3: str, t4: str) -> bool:
+    return t1 == t2 and t2 == t3 and t3 == t4
+
 def un_responsable_por_turno(grilla_horaria: list[list[str]]) -> list[tuple[bool, bool]]:
     res: list[tuple[bool, bool]] = []
 
-    
+    for i in range(len(grilla_horaria)):
+        grilla = grilla_horaria[i]
+        
+
+
+
+
+
+    # for i in range(len(camas_por_piso)):
+    #     camas = camas_por_piso[i]
+    #     camas_ocupadas_por_piso: int = 0
+    #     for j in range(len(camas)):
+    #         if camas[j] == True:
+    #             camas_ocupadas_por_piso += 1
+    #     ocupaciones.append(camas_ocupadas_por_piso)
+
+    # for k in range(len(ocupaciones)):
+    #     res.append(ocupaciones[k] / len(camas_por_piso[k]))
